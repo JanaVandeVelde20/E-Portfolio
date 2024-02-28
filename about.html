@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand bg-dark shadow">
+    <div class="container d-flex justify-content-between align-items-center" style="height:80px; padding-bottom: 0px;">
+        <div class="align-self-center collapse navbar-collapse justify-content-lg-between" id="templatemo_main_nav">
+            <div>
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="container height">
+    <div class="container-fluid text-left" style="padding: 30px;">
+        <div class="row">
+            <h3 style="padding-left: 15px; padding-top: 10px;">About Me</h3><br>
+            <div class="col-sm-6" style="padding-top: 15px;">
+                <p>
+                    I'm Jana Vande Velde, a 19-year-old IT student with a passion for both technology and design.
+                    I chose to study applied computer science (APP/AI). Since I wanted to learn more about web application development.
+                    Outside of my studies, I'm a circus teacher, sharing my skills with children and teenagers. <br>
+
+                    <br>I aspire a career as a web designer since I'm passionate about creating digital experiences.
+                    If you're curious to explore what I've learned thus far, feel free to check out my CV by clicking one of the buttons below.
+                </p>
+                <div class="row" style="margin-left: -20px;">
+                    <div class="col-4">
+                        <button onclick="downloadFile()" class="btn btnCustom">Download CV</button>
+                    </div>
+                    <div class="col-4" style="margin-left: -30px;">
+                        <a href="CV.pdf" target="_blank">
+                            <button class="btn btnCustom">View CV</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="padding-left: 20px;">
+                <img src="/assets/img/profile-pic%20(2).png" class="img-responsive rounded-3" style="height:300px;"/>
+            </div>
+        </div><br>
+    </div>
+</div>
+
+<!--Footer -->
+<footer class="bg-dark" id="tempaltemo_footer">
+    <div class="w-100 bg-black">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-10">
+                    <p class="text-left text-light" style="margin-top:12px;">
+                        &copy; Portfolio Jana Vande Velde
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</footer>
+
+<!-- Download CV-->
+<script>
+    function downloadFile() {
+        // Replace 'path/to/your/file.pdf' with the actual path to your file
+        const fileUrl = 'CV.pdf';
+
+        // Creating a temporary link element
+        const link = document.createElement('a');
+        link.href = fileUrl;
+
+        // Setting the download attribute with the desired file name
+        link.download = 'CV_JanaVandeVelde.pdf';
+
+        // Appending the link to the body
+        document.body.appendChild(link);
+
+        // Triggering the click event on the link
+        link.click();
+
+        // Removing the link from the DOM
+        document.body.removeChild(link);
+    }
+</script>
+
+<!-- Start External Scripts-->
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/templatemo.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- End Script -->
+</body>
+</html>
