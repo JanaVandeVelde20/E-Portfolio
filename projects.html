@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/template.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -17,7 +18,7 @@
 
 <nav class="navbar navbar-expand bg-dark shadow">
     <div class="container d-flex justify-content-between align-items-center" style="height:80px; padding-bottom: 0px;">
-        <div class="align-self-center collapse navbar-collapse justify-content-lg-between" id="templatemo_main_nav">
+        <div class="align-self-center collapse navbar-collapse justify-content-lg-between" id="template_main_nav">
             <div>
                 <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                     <li class="nav-item">
@@ -34,95 +35,102 @@
         </div>
     </div>
 </nav>
-
-<div class="container mt-4">
-    <h1>My Projects</h1>
-    <div id="RA" class="row" style="padding-top: 10px;">
-        <div class="col-sm-6">
-            <h4>Requirement Analysis:</h4>
-            <h5> Prototype TM competition platform</h5>
-            <p>
-                During the projectweek for Requirement Analysis and PHP, we got the task to make a competition platform for Thomas More.
-                Since we got only one week to work on it, we only needed to do the basics to start the project. This included making the following: a use case diagram, a data model and prototypes for the entire system.
-                <br>
-                <h6>My part of the groups project:</h6>
-                I mainly focused on making the prototypes and I also helped with making the use case diagram.
-                It think it was a nice project to work on. I enjoyed making the prototypes, and I'm happy with the result we got as a group.
-                <br> <br>
-                <h6>Reflection:</h6>
-                For this semester I hope we can turn the prototype in a fully functioning system. And I'm already looking forward to work with PHP.
-            </p>
+<div class="container-fluid">
+    <div class="px-md-4">
+        <div class="row pt-0 pb-5">
+            <div class="col-lg-12 mx-auto">
+                <div class="text-white p-5 shadow-sm rounded banner">
+                    <h1 class="display-4">My projects</h1>
+                    <p class="lead">Here you can view some of the recent projects I made.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-6">
-            <img src="/assets/img/Project%20RA%20Prototype.png" class="img-responsive img-thumbnail projectPic"/>
-        </div>
-    </div>
-    <div id="DevOps" class="row" style="padding-top: 30px;">
-        <div class="col-sm-6">
-            <h4 >DevOps & Security: C# recipe organizer </h4>
-            <p>
-                For DevOps & Security we got to choose our own project. I choose to design a recipe organizer using C# and Windows Forms.
-                <br>
-                <h6>Technical aspects:</h6>
-                The application utilizes SQLite for local recipe storage, and I implemented the CRUD (Create, Read,
-                Update, Delete) principles to manage recipe data. To facilitate database interactions, I employed the
-                Object-Relational Mapping (ORM) tool Dapper. Additionally, I incorporated inheritance in the design,
-                introducing a parent class named "Recipe" and a child class named "AdvancedRecipe." This
-                inheritance structure allows for a hierarchical organization of recipe data within the application.
-                <br> <br>
-                <h6>Reflection:</h6>
-                Through self-study, I gained valuable insights, in how to utilize databases with C# and Windows Forms. This skill is particularly important since the majority of modern applications rely on databases for their functionality.
-            </p>
-        </div>
-        <div class="col-sm-6">
-            <img src="/assets/img/Case%20Study%20DevOps%20&%20Security.png" class="img-responsive img-thumbnail projectPic"/>
-        </div>
-
-    </div>
-    <div id="DataVisualisation" class="row" style="padding-top: 30px;">
-        <div class="col-sm-6">
-            <h4 >Data Visualisation: wildlife strikes</h4>
-            <p>
-                For the Data Visualization course project, we focused on wildlife strikes in aviation, aiming to inform people using various types of graphs, buttons and images.
-                <br>
-                <br>
-                The project consists of four pages, each addressing specific questions:
-            <ul>
-                <li>What kind of damage does this cause?</li>
-                <li>Are there any weather correlations?</li>
-                <li>Where and when does it happen?</li>
-                <li>Which species causes these incidents?</li>
-            </ul>
-            <br>
-            <h6>Reflection:</h6>
-            I found this project very interesting to work on. I gained more insight on how to visualise data by using different kind of graphs. Moreover, it taught me the art of storytelling through the interpretation of data and graphs.
-            </p>
-        </div>
-        <div class="col-sm-6">
-            <img src="/assets/img/Data%20Visualisation%20Wildlife%20Strikes%20Project.png" class="img-responsive img-thumbnail projectPic"/>
-        </div>
-    </div>
-    <div id="WebsiteMJ" class="row" style="padding-top: 30px;">
-        <div class="col-sm-6">
-            <h4>Website MJ Entertainment</h4>
-            <p>
-                During my free time, I created a website dedicated to providing entertainment for kids' parties and various events.
-                The offerings on this platform include both shows and workshops, featuring activities such as balloon twisting, circus performances, and magic tricks.
-                The development process involved the use of Bootstrap, HTML, CSS, and JavaScript, enhancing the site's visual appeal and functionality.
-                <br>
-                If you're curious to explore the result of my efforts, click on the following link: <a href="https://mj-entertainment.netlify.app/">MJ Entertainment</a>
-                <br>
-                <h6>Reflection:</h6>
-                By creating this website it deepened my understanding of webdesign, particularly the use of Bootstrap.
-            </p>
-        </div>
-        <div class="col-sm-6">
-            <img src="/assets/img/MJ-entertainment_website.png" class="img-responsive img-thumbnail projectPic1 position-absolute"/>
+        <div class="row">
+            <!-- Gallery items -->
+            <!-- Item 1-->
+            <div class="col-xl-4 col-lg-4 col-md-4 mb-5">
+                <div class="bg-white rounded shadow" style="width: 100%; height: 100%;">
+                    <img src="/assets/img/PHP_home.png" alt="Data Visualisation" class="img-fluid card-img-top" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="p-4" style="height: 100%;">
+                        <h5> <a href="PHP_project.html" class="fw-bold purple">PHP competition platform</a></h5>
+                        <p class="small text-muted mb-0">Together with our group we created a competition platform for Thomas More.  </p>
+                        <div class="d-flex align-items-center justify-content-between bg-light px-3 py-2 mt-4">
+                           <p class="small mb-0"> <a class="font-weight-bold text-decoration-none" href="PHP_project.html">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2-->
+            <div class="col-xl-4 col-lg-4 col-md-4 mb-5">
+                <div class="bg-white rounded shadow" style="width: 100%; height: 100%;">
+                    <img src="/assets/img/MJentertainment_Home.png" alt="Data Visualisation" class="img-fluid card-img-top" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="p-4" style="height: 100%;">
+                        <h5> <a href="MJ-entertainment.html"class="fw-bold purple">Website MJ entertainment</a></h5>
+                        <p class="small text-muted mb-0">In my free time I made my own website to promote myself as an all around circus artist/entertainer.</p>
+                        <div class="d-flex align-items-center justify-content-between bg-light px-3 py-2 mt-4">
+                            <p class="small mb-0"> <a class="font-weight-bold text-decoration-none" href="MJ-entertainment.html">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="col-xl-4 col-lg-4 col-md-4 mb-5">
+                <div class="bg-white rounded shadow" style="width: 100%; height: 100%;">
+                    <img src="/assets/img/WebDesignAdvanced.png" alt="Data Visualisation" class="img-fluid card-img-top" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="p-4" style="height: 100%;">
+                        <h5> <a href="Lilly's-flowerShop.html" class="fw-bold purple">Website Lilly's flowerShop</a></h5>
+                        <p class="small text-muted mb-0">This is a website I made for a fictional local flower shop named Lilly's flowerShop.</p>
+                        <div class="d-flex align-items-center justify-content-between bg-light px-3 py-2 mt-4">
+                            <p class="small mb-0"> <a class="font-weight-bold text-decoration-none" href="Lilly's-flowerShop.html">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="col-xl-4 col-lg-4 col-md-4 mb-4">
+                <div class="bg-white rounded shadow" style="width: 100%;">
+                    <img src="/assets/img/CalendarApp_Dashboard.png" alt="Requirement Analysis" class="img-fluid card-img-top" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="p-4" style="height: 100%;">
+                        <h5> <a href="RA_project.html" class="fw-bold purple">Requirement Analysis - Axure Prototype</a></h5>
+                        <p class="small text-muted mb-0">I made a prototype in Axure for a calendar app where you can keep track of appointments, daily routines,... . </p>
+                        <div class="d-flex align-items-center justify-content-between bg-light px-3 py-2 mt-4">
+                            <p class="small mb-0"> <a class="font-weight-bold text-decoration-none" href="RA_project.html">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="col-xl-4 col-lg-4 col-md-4 mb-4">
+                <div class="bg-white rounded shadow" style="width: 100%;">
+                    <img src="/assets/img/Data%20Visualisation%20Wildlife%20Strikes%20Project.png" alt="Data Visualisation" class="img-fluid card-img-top" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="p-4" style="height: 100%;">
+                        <h5> <a href="DataVisualisation_project.html" class="fw-bold purple">Data Visualisation - QlikSense Dashboard</a></h5>
+                        <p class="small text-muted mb-0">Here you can see the dashboard I made in Qliksense.</p>
+                        <div class="d-flex align-items-center justify-content-between bg-light px-3 py-2 mt-4">
+                            <p class="small mb-0"> <a class="font-weight-bold text-decoration-none" href="DataVisualisation_project.html">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 6-->
+            <div class="col-xl-4 col-lg-4 col-md-4 mb-4">
+                <div class="bg-white rounded shadow" style="width: 100%;">
+                    <img src="/assets/img/DevOps.png" alt="Data Visualisation" class="img-fluid card-img-top" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="p-4" style="height: 100%;">
+                        <h5> <a href="RecipeOrganizer_project.html" class="fw-bold purple">Windows Forms - Recipe Organizer C# application</a></h5>
+                        <p class="small text-muted mb-0">I made a recipe organizer to store different recipes. To make this I used C#, SQLite and Dapper.</p>
+                        <div class="d-flex align-items-center justify-content-between bg-light px-3 py-2 mt-4">
+                            <p class="small mb-0"> <a class="font-weight-bold text-decoration-none" href="RecipeOrganizer_project.html">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 <!--Footer -->
-<footer class="bg-dark" id="tempaltemo_footer">
+<footer class="bg-dark" id="template_footer" style="position: relative; bottom:0; width:100%">
     <div class="w-100 bg-black">
         <div class="container">
             <div class="row pt-2">
@@ -135,15 +143,18 @@
 
         </div>
     </div>
-    </div>
 </footer>
 
 <!-- Start External Scripts-->
 <script src="assets/js/jquery-1.11.0.min.js"></script>
 <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/templatemo.js"></script>
+<script src="assets/js/template.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <!-- End Script -->
 </body>
 </html>
