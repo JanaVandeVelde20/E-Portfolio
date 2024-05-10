@@ -1,6 +1,23 @@
 body{
-    background-color: #ffffff;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+footer {
+    margin-top: auto;
+}
+.banner {
+    background: #573571;
+    background: -webkit-linear-gradient(to right, #5c3776, #8a63b4, #653c81);
+    background: linear-gradient(to right, #653c81, #8a63b4, #653c81);
+}
+
+    .bannerImg1 {
+        background-image: url('/assets/img/PHP_home.png');
+        background-position: center;
+    }
+
 .height{
     height:calc(100vh - 60px);
 }
@@ -9,7 +26,7 @@ body{
 }
 
 .purple{
-    color:#8a638a !important;
+    color:#604385 !important;
 }
 
 .h1 {
@@ -17,7 +34,12 @@ body{
     font-weight: 200!important;
     color: #8a63b4!important; /* Changed to purple */
 }
-
+p a{
+    color: #603a7b;
+}
+p a:hover{
+   color: #ab8ecf;
+}
 .bg-success,
 .btn-success {
     background-color: #8a63b4!important; /* Changed to purple */
@@ -33,18 +55,6 @@ body{
     color: #fff;
 }
 
-#template-mo-zay-hero-carousel .carousel-indicators li {
-    background-color: #8a63b4!important; /* Changed to purple */
-}
-
-#template-mo-zay-hero-carousel .carousel-control-prev i {
-    color: #8a63b4 !important;
-    font-size: 2.8em !important;
-}
-#template-mo-zay-hero-carousel .carousel-control-next i, #template-mo-zay-hero-carousel .carousel-control-prev i {
-    color: #8a63b4 !important;
-    font-size: 2.8em !important;
-}
 .p-5 {
     padding: 2rem!important;
 }
@@ -52,16 +62,6 @@ body{
 .img-fluid {
     max-width: 65%;
     height: auto;
-}
-
-#template-mo-zay-hero-carousel .carousel-item {
-    min-height: 15rem !important;
-}
-#templatemo_nav_top {
-    min-height: 40px;
-}
-#templatemo_main_nav a:hover {
-    color: #ab8ecf;
 }
 
 .navbar{
@@ -93,21 +93,25 @@ body{
     background-color: #cca7db;
     color:white;
 }
-.projectPic{
-    height: 300px;
-    width:500px;
-    margin-top: 45px;
-    margin-left: 45px
-}
-.projectPic1{
-    height: 300px;
-    margin-left: 45px
-}
+
 a{
     text-decoration: none;
 }
-
-/* Mobile*/
-@media only screen and (max-width: 767px) {
-
+.section .row{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.section .row .col-md-6{
+    background: #f5f5f5;
+    padding: 5%;
+}
+.section h3{
+    color: #5c3776;
+}
+.section p{
+    margin-top: 5%;
+}
+.section img
+{
+    width: 100%;
 }
